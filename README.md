@@ -4,18 +4,27 @@
 
 ## 一键安装
 
-在终端运行：
+在 Codex 里新开一个对话，把下面这段话直接发给 Codex：
 
-```bash
-PET_ID=line-sprout
-BASE_URL="https://raw.githubusercontent.com/zyiliwo-byte/chenli-xiaotu_pet/main/pets/line-sprout"
+```text
+请帮我安装这个 Codex 桌面宠物：
 
-mkdir -p "$HOME/.codex/pets/$PET_ID" \
-  && curl -fsSL "$BASE_URL/pet.json" -o "$HOME/.codex/pets/$PET_ID/pet.json" \
-  && curl -fsSL "$BASE_URL/spritesheet.webp" -o "$HOME/.codex/pets/$PET_ID/spritesheet.webp"
+宠物名称：小兔
+宠物 ID：line-sprout
+pet.json：
+https://raw.githubusercontent.com/zyiliwo-byte/chenli-xiaotu_pet/main/pets/line-sprout/pet.json
+spritesheet.webp：
+https://raw.githubusercontent.com/zyiliwo-byte/chenli-xiaotu_pet/main/pets/line-sprout/spritesheet.webp
+
+请把它安装到我的本地 Codex 宠物目录：
+~/.codex/pets/line-sprout/
+
+安装完成后，请提醒我在 Codex Desktop 里打开：
+Settings -> Appearance -> Pets -> Refresh custom pets
+然后选择「小兔」。
 ```
 
-安装后，在 Codex Desktop 里打开：
+安装后，如果 Codex 还没有自动提醒你，在 Codex Desktop 里打开：
 
 ```text
 Settings -> Appearance -> Pets -> Refresh custom pets
